@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="JavaApplication11">
+  <ClassDiagramComponents>
+    <Class name="Arreglo" package="TP5" visibility="public" xPosition="39.0" yPosition="88.0">
+      <Fields>
+        <Field name="arreglo" type="int[]" visibility="package"/>
+        <Field name="mayor" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int[]" name="arreglo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMayor" returnType="int" visibility="public"/>
+        <Method name="sumarLista" returnType="void" visibility="package" isStatic="true">
+          <Argument type="int[]" name="arreglo"/>
+        </Method>
+        <Method name="buscarMayor" returnType="int" visibility="package" isStatic="true">
+          <Argument type="int[][]" name="arreglo"/>
+        </Method>
+        <Method name="cuentaVocales" returnType="int" visibility="package" isStatic="true">
+          <Argument type="String" name="string"/>
+        </Method>
+        <Method name="cuentaCaracter" returnType="int" visibility="package" isStatic="true">
+          <Argument type="String" name="string"/>
+          <Argument type="char" name="c"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PruebaArreglo" package="TP5" visibility="public" xPosition="387.0" yPosition="154.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="" source="TP5.PruebaArreglo" target="TP5.Arreglo" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
